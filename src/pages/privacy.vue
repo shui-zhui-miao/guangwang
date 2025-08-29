@@ -2,7 +2,7 @@
 defineOptions({
   name: 'IndexPage',
 })
-const appName = 'Rilu'
+const appName = 'Pomp'
 </script>
 
 <template>
