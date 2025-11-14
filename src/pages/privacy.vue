@@ -2,7 +2,7 @@
 defineOptions({
   name: 'IndexPage',
 })
-const appName = 'Tunx'
+const appName = 'Bayo'
 </script>
 
 <template>
