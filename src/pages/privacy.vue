@@ -22,7 +22,6 @@ const effectiveDate = 'June 4, 2026'
     <p>
       This Privacy Policy applies to {{ appName }}, a mobile application published on Google Play under the package name {{ packageName }}. This Privacy Policy explains how {{ appName }} collects, uses, stores, protects, and discloses user information when users access or use our mobile application and related services.
     </p>
-
     <p>
       By using {{ appName }}, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this Privacy Policy, please do not use {{ appName }}.
     </p>
@@ -447,5 +446,8 @@ const effectiveDate = 'June 4, 2026'
     border-radius: 8px;
     color: #555;
     line-height: 1.6;
+  }
+  p {
+    margin: 8px 0;
   }
 </style>
