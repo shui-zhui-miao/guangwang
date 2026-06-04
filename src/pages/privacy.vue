@@ -3,19 +3,29 @@ defineOptions({
   name: 'IndexPage',
 })
 const appName = 'Hany'
+const packageName = 'com.zmqzmqbsf.haneurjcn'
+const contactEmail = 'lvyuming1983@icloud.com'
+const effectiveDate = 'June 4, 2026'
 </script>
 
 <template>
   <div class="protocol">
     <div class="bt" style="text-align: center">
-      {{ appName }}'s Privacy Policy
+      {{ appName }} Privacy Policy
     </div>
-    The use of {{ appName }} through mobile applications may involve collection and use
-    of your information. This Privacy Policy explains and informs you how your
-    information is collected, used and disclosed by {{ appName }} with respect to your
-    access and use of our services through our mobile applications. It is
-    important for you to understand this Privacy Policy and how you may protect
-    your information, so please read this Privacy Policy carefully.
+    <div class="meta">
+      Effective Date: {{ effectiveDate }}<br>
+      App Name: {{ appName }}<br>
+      Package Name: {{ packageName }}<br>
+      Developer Contact: {{ contactEmail }}
+    </div>
+    <p>
+      This Privacy Policy applies to {{ appName }}, a mobile application published on Google Play under the package name {{ packageName }}. This Privacy Policy explains how {{ appName }} collects, uses, stores, protects, and discloses user information when users access or use our mobile application and related services.
+    </p>
+
+    <p>
+      By using {{ appName }}, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this Privacy Policy, please do not use {{ appName }}.
+    </p>
     <br>
     <div class="bt">
       1. Application Scope of this Privacy Policy
@@ -73,8 +83,7 @@ const appName = 'Hany'
     upload, distribute, or stream on the Application while using the {{ appName }}
     Service;
     <br><br>
-    4) Payment information, such as bank account number, Paypal or other payment
-    information to be paid;
+    4) Purchase information: If you make an in-app purchase, payment is processed by Google Play. We do not directly collect or store your bank card number, PayPal account, or other payment credentials. We may receive limited purchase-related information, such as product ID, order status, purchase time, and transaction identifier, to provide purchased services and handle support requests;
     <br><br>
     5) Transaction information such as transaction number and transaction
     history after you purchase the paid service;
@@ -105,10 +114,10 @@ const appName = 'Hany'
     and sharing of your data will also be governed by the privacy policies and
     other agreements of such third party.
     <br><br>
-    ⊙Device identifiers, such as your operating system, browser type, brand,
-    model and mobile device serial number, Internet Protocol (IP) address,
-    mobile operator, screen resolution, language Settings, IMEI number, IMSI
-    number, and media access control address;
+    Device and usage information: We may collect device model, 
+    operating system version, app version, language settings, network status, 
+    IP address, device identifiers provided by the operating system or analytics 
+    SDKs, crash logs, diagnostics, and usage events.
     <br><br>
     ⊙Network activity information, such as your browsing history, search
     history, videos or pages you visited, the dates and times you visited, other
@@ -124,8 +133,6 @@ const appName = 'Hany'
     being used and the state of the application when the error occurred. We do
     not use this information for any purpose other than investigating and fixing
     the error.
-    <br><br>
-    ⊙Information about your access to and use of other applications;
     <br><br>
     ⊙Metadata, associated with the UGC you provide to us, describes other data
     and provides information about how, when, and by whom the UGC clips are
@@ -286,7 +293,7 @@ const appName = 'Hany'
     <br><br>
     6) Any information or content that you voluntarily disclose to publish to
     the Service, such as user content, will be made available to the public.
-    With this feature, {{ appName }} can prevent demand frenzy.Once you share user
+    Once you share user
     content or make it public, that user content may be re-shared by others;
     <br><br>
     7) If you delete information and content that you create on the Service (for
@@ -377,8 +384,9 @@ const appName = 'Hany'
     identifiable information you provide to us.Access to all personally
     identifiable information is limited to {{ appName }} employees, contractors, agents
     and third party service providers who want to know this information in order
-    to provide, operate and develop it.Maintenance, support can be political
-    into the service.
+    to provide, operate and develop it.Access to personal information is limited to 
+    employees, contractors, service providers, and agents who need the information to 
+    operate, maintain, support, and improve the service.
     <br><br>
     <div class="bt">
       7. Age
@@ -413,8 +421,8 @@ const appName = 'Hany'
     <div class="bt">
       9. Contacting Us
     </div>
-    If you have any questions about our Privacy Policy or any privacy-related
-    matters, please contact us via email at 【{{ appName }}@{{ appName }}.site】.
+    If you have any questions about this Privacy Policy or any privacy-related 
+    matters, please contact us at {{ contactEmail }}.
     <br><br>
   </div>
 </template>
@@ -431,5 +439,13 @@ const appName = 'Hany'
     font-size: 20px;
     margin: 6px 0px;
     color: #7f1146;
+  }
+  .meta {
+    margin: 12px 0;
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    color: #555;
+    line-height: 1.6;
   }
 </style>
