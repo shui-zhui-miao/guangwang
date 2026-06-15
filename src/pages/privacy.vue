@@ -2,7 +2,7 @@
 defineOptions({
   name: 'IndexPage',
 })
-const appName = 'Hany'
+const appName = 'Bachus'
 const packageName = 'com.zmqzmqbsf.haneurjcn'
 const contactEmail = 'lvyuming1983@icloud.com'
 const effectiveDate = 'June 4, 2026'
