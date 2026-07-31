@@ -2,7 +2,7 @@
 defineOptions({
   name: 'IndexPage',
 })
-const appName = 'YanLive'
+const appName = 'Gottu'
 </script>
 
 <template>
