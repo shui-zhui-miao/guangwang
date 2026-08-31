@@ -9,7 +9,7 @@ defineOptions({
     <img h-full w-full src="../assets/bg.png" alt="">
     <div class="email" absolute bottom-10 w-full flex justify-center>
       <div rd-2 bg-black p-2 p-x-5 text-8 color-white>
-        
+        yinzhaoyi1970326@icloud.com
       </div>
     </div>
   </div>
