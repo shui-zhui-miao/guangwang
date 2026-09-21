@@ -2,7 +2,7 @@
 defineOptions({
   name: 'IndexPage',
 })
-const appName = 'Vaim'
+const appName = 'Molog'
 </script>
 
 <template>
