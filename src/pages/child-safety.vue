@@ -3,9 +3,9 @@
     <article class="policy-card">
       <header class="hero">
         <p class="eyebrow">
-          Modliv · Trust & Safety
+          Modliv: Share, Live Chat · Trust & Safety
         </p>
-        <h1>Child Safety Standards</h1>
+        <h1>Modliv: Share, Live Chat Child Safety Standards</h1>
         <p class="updated">
           Last updated: November 13, 2026
         </p>
@@ -14,7 +14,7 @@
       <section>
         <h2>Our commitment</h2>
         <p>
-          Modliv is intended for users aged 18 and over. We are committed to
+          Modliv: Share, Live Chat is intended for users aged 18 and over. Basir is committed to
           maintaining a safe community and have zero tolerance for child sexual
           abuse and exploitation (CSAE) or child sexual abuse material (CSAM).
         </p>
@@ -27,7 +27,7 @@
           <li>Any content depicting, facilitating, or promoting the sexual abuse or exploitation of a minor.</li>
           <li>Grooming, sexual solicitation, coercion, trafficking, or exploitation of a minor.</li>
           <li>Sexualized images, videos, messages, or other material involving a minor.</li>
-          <li>Any attempt to use Modliv to contact a minor for sexual purposes.</li>
+          <li>Any attempt to use Modliv: Share, Live Chat to contact a minor for sexual purposes.</li>
         </ul>
       </section>
 
@@ -48,7 +48,7 @@
       <section>
         <h2>Our response</h2>
         <p>
-          When Modliv obtains actual knowledge of suspected CSAM or CSAE-related
+          When Basir obtains actual knowledge of suspected CSAM or CSAE-related
           content or conduct, we take appropriate action under our policies and
           applicable law. This may include removing content, restricting or
           terminating accounts, preserving relevant information where legally
@@ -61,7 +61,7 @@
         <dl class="contact-list">
           <div>
             <dt>Contact</dt>
-            <dd>Modliv Safety Team</dd>
+            <dd>Basir</dd>
           </div>
           <div>
             <dt>Email</dt>
@@ -70,7 +70,7 @@
         </dl>
         <p>
           This contact can receive notifications from Google Play regarding
-          child-safety concerns and coordinate Modliv's review and enforcement response.
+          child-safety concerns and coordinate Basir's review and enforcement response.
         </p>
       </section>
     </article>
