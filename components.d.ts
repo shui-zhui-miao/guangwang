@@ -9,10 +9,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    LegalChildSafety: typeof import('./src/components/LegalChildSafety.vue')['default']
+    LegalPrivacy: typeof import('./src/components/LegalPrivacy.vue')['default']
+    LegalTerms: typeof import('./src/components/LegalTerms.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheCounter: typeof import('./src/components/TheCounter.vue')['default']
-    TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
   }
 }
