@@ -1,22 +1,44 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import TheCounter from '../src/components/TheCounter.vue'
+import { nextTick } from 'vue'
+import { createMemoryHistory, createRouter } from 'vue-router'
+import routes from 'virtual:generated-pages'
+import App from '../src/App.vue'
 
-describe('TheCounter.vue', () => {
-  it('should render', () => {
-    const wrapper = mount(TheCounter, { props: { initial: 10 } })
-    expect(wrapper.text()).toContain('10')
-    expect(wrapper.html()).toMatchSnapshot()
+async function mountSite(path: string) {
+  const router = createRouter({ history: createMemoryHistory(), routes })
+  await router.push(path)
+  const wrapper = mount(App, { global: { plugins: [router] } })
+  return { router, wrapper }
+}
+
+describe('Vaim website', () => {
+  it('updates the workout panel when a training goal is selected', async () => {
+    const { wrapper } = await mountSite('/')
+    const upperBody = wrapper.findAll('button').find(button => button.text() === 'Upper body')!
+
+    await upperBody.trigger('click')
+
+    expect(upperBody.attributes('aria-pressed')).toBe('true')
+    expect(wrapper.get('#goal-preview').text()).toContain('Build your upper-body routine.')
+    wrapper.unmount()
   })
 
-  it('should be interactive', async () => {
-    const wrapper = mount(TheCounter, { props: { initial: 0 } })
-    expect(wrapper.text()).toContain('0')
+  it('connects both existing legal pages and supports the terms alias', async () => {
+    const { router, wrapper } = await mountSite('/privacy')
 
-    expect(wrapper.find('.inc').exists()).toBe(true)
+    expect(wrapper.get('h1').text()).toBe('Privacy Policy')
+    const agreementLink = wrapper.get('nav[aria-label="Legal pages"] a[href="/users"]')
+    await router.push(agreementLink.attributes('href')!)
+    await nextTick()
 
-    await wrapper.get('button').trigger('click')
+    expect(router.currentRoute.value.path).toBe('/users')
+    expect(wrapper.get('h1').text()).toBe('User Agreement')
+    expect(wrapper.get('nav[aria-label="Legal pages"] [aria-current="page"]').text()).toBe('User Agreement')
 
-    expect(wrapper.text()).toContain('1')
+    await router.push('/terms')
+    await nextTick()
+    expect(wrapper.get('h1').text()).toBe('User Agreement')
+    wrapper.unmount()
   })
 })

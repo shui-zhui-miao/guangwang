@@ -3,23 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <title>Vaim</title>
-  <meta name="description" content="Opinionated Vite Starter Template">
+  <link rel="icon" href="/vaim.png" type="image/png">
+  <title>Vaim — Fitness Videos &amp; Community</title>
+  <meta name="description" content="Discover workout videos, share your fitness progress, and connect with the Vaim community.">
 </head>
-<body class="font-sans dark:text-white dark:bg-hex-121212">
+<body>
   <div id="app"></div>
   <noscript>
-    <div>Please enable JavaScript to use this application.</div>
+    <p>Please enable JavaScript to view Vaim.</p>
   </noscript>
-  <script>
-    (function () {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      const setting = localStorage.getItem('color-schema') || 'auto'
-      if (setting === 'dark' || (prefersDark && setting !== 'light'))
-        document.documentElement.classList.toggle('dark', true)
-    })()
-  </script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
